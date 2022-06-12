@@ -20,3 +20,13 @@ Route::get('/', function () {
 
 Auth::routes(['register' => false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(
+    [
+        'middleware' => ['auth', 'role:superadmin'],
+        'prefix' => 'backend',
+    ],
+    function () {
+        Route::get('/agencies',App\Http\Livewire\Agencies::class)->name('backend.agencies');
+        Route::get('/stazios',App\Http\Livewire\Stazios::class)->name('backend.stazios');
+});

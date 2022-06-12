@@ -164,6 +164,8 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'form.name'  => 'name'
+    ],
 
 ];

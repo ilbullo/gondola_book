@@ -26,4 +26,12 @@ class Day extends Model
         'created_at',
         'updated_at'
     ];
+
+    /**
+     * Show all related rows
+     */
+
+    public function rows() {
+        return $this->hasMany('dayrows','day_id');
+    }
 }

@@ -13,6 +13,7 @@ class AgencySeeder extends Seeder
      *
      * @return void
      */
+
     public function run()
     {
         Agency::factory(50)->create();

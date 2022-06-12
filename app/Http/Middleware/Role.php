@@ -22,7 +22,7 @@ class Role
     // check each role to see if the user is allowed
     foreach($roles as $role) {
 
-        if($user->role->value == $role) {
+        if($user->role == $role) {
             return $next($request);
         }
     }

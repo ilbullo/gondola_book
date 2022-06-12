@@ -30,4 +30,12 @@ class DayRow extends Model
         'type'              => \App\Enum\WorkType::class,
         'payment_type'      => \App\Enum\PaymentType::class
     ];
+
+    /**
+     * Show related day
+     */
+
+    public function day() {
+        return $this->belongsTo('days','day_id','id');
+    }
 }

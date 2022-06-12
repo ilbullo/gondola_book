@@ -3,6 +3,20 @@
 use Illuminate\Support\Facades\Facade;
 
 return [
+    /************* COMMON MESSAGES FOR ALL APP */
+
+    'deleted_item_message'              => "Item deleted successfully",
+    'trashed_item_message'              => "Item put in the bin",
+    'updated_item_message'              => "Item updated successfully",
+    'created_item_message'              => "Item created successfully",
+    'empty_table_message'               => "No results found",
+    'item_not_found_message'            => "Item not found",
+    'item_not_deleted_message'          => "Item not deleted",
+    'restored_item_message'             => "Item restored successfully",
+    'not_restored_item_message'         => "Item not restored",
+    'multiple_delete_ok_message'        => "Items deleted successfully",
+    'multiple_trash_ok_message'         => "Items trashed successfully",
+    'multiple_restore_ok_message'       => "Items restored successfully",
 
     /*
     |--------------------------------------------------------------------------
@@ -82,7 +96,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'it',
 
     /*
     |--------------------------------------------------------------------------
